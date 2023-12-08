@@ -1,8 +1,41 @@
 :root {
+    
     box-sizing: border-box;
+    border: 2px solid red;
+    --page-default-background-color:white;
     --input-vaild: green;
     --input-invaild:red;
     --input-focus:blue;
+    --sign-up-form--width-percentage:70%;
+
+    background-color: var(--page-default-background-color);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    width: calc(100% - var(--sign-up-form--width-percentage)) ;
+    height: 100vh;
+    background-color: green;
+}
+
+img{
+    display: block;
+    border: 2px solid red;
+    width: 200px ;
+    height: 400px;
+    /* width: calc(100% - var(--sign-up-form--width-percentage)) ;
+    height: 100vh; */
 }
 
 input:invalid{
@@ -20,26 +53,29 @@ input:focus{
 }
 
 .sign-up-form{
+    border: 2px solid red;
+    width: var(--sign-up-form--width-percentage);
+    
+}
+
+.sign-up-form-data-inputs{
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
+    box-shadow: 0 0 5px black;
 }
 
-.sign-up-form > div{
+.sign-up-form-data-inputs > div{
     box-sizing: border-box;
-    min-width:40%;
+    /* min-width:40%; */
 }
 
-.sign-up-form > div > label{
+.sign-up-form-data-inputs > div > label{
     display: block;
 }
 
-.sign-up-form > div > input[type='password'] + div{
+.sign-up-form-data-inputs > div > input[type='password'] + div{
     width: fit-content;
     /* background-color: red; */
     box-shadow: 0 0 5px black;
 }
-
-
-
-

@@ -8,38 +8,48 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1><strong>Register</strong></h1>
-    <form class="sign-up-form" action="" method="post">
-        <div class="sign-up-form-first-name">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" required>
+    <!-- <h1><strong>Register</strong></h1> -->
+    <div class="container">
+        <div class="img-container">
+            <img src="./background-image.jpg" alt="background-image">       
         </div>
-        <div class="sign-up-form-last-name">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name" required>
-        </div>
-        <div class="sign-up-form-email">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div class="sign-up-form-phone-number">
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" name="phone-number" id="phone-number" required>
-        </div>
-        <div class="sign-up-form-password">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" minlength="8" required>
-            <div class="sign-up-form-password-error-message">
-                *Password do not match.
+        
+        
+        <form class="sign-up-form" action="" method="post">
+            <section class="sign-up-form-data-inputs">
+                <div class="sign-up-form-first-name">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="*name" required>
+                </div>
+                <div class="sign-up-form-last-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="*lastname" required>
+                </div>
+                <div class="sign-up-form-email">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="sign-up-form-phone-number">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="0911111111" required>
+                </div>
+                <div class="sign-up-form-password">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" minlength="8" placeholder="*least 8 characters" required>
+                    <div class="sign-up-form-password-error-message">
+                        *Password do not match.
+                    </div>
+                </div>
+                <div class="sign-up-form-confirm-password">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder="*at least 8 characters" required>
+                </div>    
+            </section>
+            
+            <div>
+                <input type="button" value="Create Account">
             </div>
-        </div>
-        <div class="sign-up-form-confirm-password">
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
-        </div>
-        <div>
-            <input type="button" value="Create Account">
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
