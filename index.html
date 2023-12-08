@@ -8,7 +8,7 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1>heading</h1>
+    <h1><strong>Register</strong></h1>
     <form class="sign-up-form" action="" method="post">
         <div class="sign-up-form-first-name">
             <label for="first-name">FIRST NAME</label>
@@ -28,11 +28,14 @@
         </div>
         <div class="sign-up-form-password">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
         </div>
         <div class="sign-up-form-confirm-password">
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <input type="password" name="confirm-password" id="confirm-password" required>
+            <div hidden>
+                *Password do ont match.
+            </div>
         </div>
         <div>
             <input type="button" value="Create Account">

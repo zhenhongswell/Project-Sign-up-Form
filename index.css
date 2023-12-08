@@ -1,0 +1,43 @@
+:root {
+    box-sizing: border-box;
+    --input-vaild: green;
+    --input-invaild:red;
+    --input-focus:blue;
+}
+
+input:invalid{
+    border-radius: 5px;
+    border:2px solid var(--input-invaild);
+}
+
+input:valid{
+    border-radius: 5px;
+    border:2px solid var(--input-vaild);
+}
+
+input:focus{
+    border:2px solid var(--input-focus);
+    box-shadow: 0 0 5px ;
+}
+
+.sign-up-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-up-form > div{
+    box-sizing: border-box;
+    min-width:50%;
+}
+
+.sign-up-form > div > label{
+    display: block;
+}
+
+.sign-up-form > div{
+    
+}
+
+
+
+
