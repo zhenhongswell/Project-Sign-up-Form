@@ -17,25 +17,27 @@ input:valid{
 
 input:focus{
     border:2px solid var(--input-focus);
-    box-shadow: 0 0 5px ;
 }
 
 .sign-up-form{
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
 }
 
 .sign-up-form > div{
     box-sizing: border-box;
-    min-width:50%;
+    min-width:40%;
 }
 
 .sign-up-form > div > label{
     display: block;
 }
 
-.sign-up-form > div{
-    
+.sign-up-form > div > input[type='password'] + div{
+    width: fit-content;
+    /* background-color: red; */
+    box-shadow: 0 0 5px black;
 }
 
 

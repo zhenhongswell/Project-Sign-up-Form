@@ -28,14 +28,14 @@
         </div>
         <div class="sign-up-form-password">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <div class="sign-up-form-password-error-message">
+                *Password do not match.
+            </div>
         </div>
         <div class="sign-up-form-confirm-password">
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password" required>
-            <div hidden>
-                *Password do ont match.
-            </div>
+            <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
         </div>
         <div>
             <input type="button" value="Create Account">
